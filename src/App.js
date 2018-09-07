@@ -5,6 +5,7 @@ import Pickupsavings from './components/Pickupsavings/Pickupsavings';
 import Taxesfees from './components/Taxesfees/Taxesfees';
 import Estimatedtotal from './components/Estimatedtotal/Estimatedtotal';
 import Itemdetails from './components/Itemdetails/Itemdetails';
+import Promocode from './components/Promocode/Promocode';
 import './App.css';
 
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
           <Estimatedtotal price={this.state.estimatedTotal.toFixed(2)}/>
           <Itemdetails price={this.state.estimatedTotal.toFixed(2)}/>
           <hr/>
+          <Promocode/>
         </Grid>
       </div>
     );
