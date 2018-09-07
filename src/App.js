@@ -4,6 +4,7 @@ import Subtotal from './components/Subtotal/Subtotal';
 import Pickupsavings from './components/Pickupsavings/Pickupsavings';
 import Taxesfees from './components/Taxesfees/Taxesfees';
 import Estimatedtotal from './components/Estimatedtotal/Estimatedtotal';
+import Itemdetails from './components/Itemdetails/Itemdetails';
 import './App.css';
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
           <Taxesfees taxes={this.state.taxes.toFixed(2)}/>
           <hr/>
           <Estimatedtotal price={this.state.estimatedTotal.toFixed(2)}/>
+          <Itemdetails/>
         </Grid>
       </div>
     );
