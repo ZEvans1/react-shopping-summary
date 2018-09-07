@@ -2,6 +2,10 @@
   margin-top: 10px;
 }
 
+.item-details-button:focus {
+  outline: none;
+}
+
 .pickupSavings {
   text-decoration: underline;
 }

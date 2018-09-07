@@ -18,6 +18,22 @@ export default class Itemdetails extends Component {
           {this.state.open === false ? `See` : `Hide`} item details
           {this.state.open === false? ` +` : ` -`}
         </Button>
+        <Collapse in={this.state.open}>
+          <div>
+            <Well>
+              <Media>
+                <Media.Left>
+                  <img
+                    width={100}
+                    height={100}
+                    alt="thumbnail"
+                    src="https://images-na.ssl-images-amazon.com/images/I/B1WMSXFyZmS._SL1500_.jpg"
+                  />
+                </Media.Left>
+              </Media>
+            </Well>
+          </div>
+        </Collapse>
       </div>
     );
   }
